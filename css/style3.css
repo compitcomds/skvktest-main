@@ -1,0 +1,32 @@
+@keyframes scroll {
+  0%{
+    transform: translate(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 7));
+  }
+  
+}
+
+.slider{
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  height: 120px;
+  margin-top: 150px;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slider .slide-track{
+  animation: scroll 45s linear infinite;
+  display: flex;
+  width: calc(250px *14);
+
+}
+
+.slider .slide{
+  height: 100px;
+  width: 250px;
+
+}
